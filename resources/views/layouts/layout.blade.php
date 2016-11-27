@@ -10,8 +10,10 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
         <!-- Bootstrap -->
-        <link href="/resources/assets/css/bootstrap.min.css" rel="stylesheet">
-        <script src="/resources/assets/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        {{--<link href="/resources/assets/css/bootstrap.min.css" rel="stylesheet">--}}
+        {{--<script src="/resources/assets/js/bootstrap.min.js"></script>--}}
 
     </head>
     <body>
@@ -35,24 +37,26 @@
                         <li><a href="/about">About</a></li>
                         <li><a href="/contact">Contact</a></li>
                     </ul>
-
-                    <ul class="nan navbar-nav navbar-right">
-                        <li class="dropdown">
-                            <a href="/" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">My Account <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Action action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#">Separated Link</a></li>
-                            </ul>
-                        </li>
-                    </ul>
+                    {{--<ul class="nan navbar-nav navbar-right">--}}
+                        {{--<li class="dropdown">--}}
+                            {{--<a href="/" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">My Account <span class="caret"></span></a>--}}
+                            {{--<ul class="dropdown-menu">--}}
+                                {{--<li><a href="#">Action</a></li>--}}
+                                {{--<li><a href="#">Action action</a></li>--}}
+                                {{--<li><a href="#">Something else here</a></li>--}}
+                                {{--<li role="separator" class="divider"></li>--}}
+                                {{--<li><a href="#">Separated Link</a></li>--}}
+                            {{--</ul>--}}
+                        {{--</li>--}}
+                    {{--</ul>--}}
                 </div>
             </div>
         </nav>
 
-
-        {{--@yield('about')--}}
+        @yield('content')
     </body>
+    <footer>
+        @include('pages.footer')
+    </footer>
+
 </html>
