@@ -9,6 +9,9 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+        <!-- Bootstrap -->
+        <link href="/resources/assets/css/bootstrap.min.css" rel="stylesheet">
+        <script src="/resources/assets/js/bootstrap.min.js"></script>
 
     </head>
     <body>
